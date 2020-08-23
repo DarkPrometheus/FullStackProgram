@@ -43,7 +43,7 @@ header{
 nav.menu{
     background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 18px;
 }
     nav.menu a{
@@ -78,16 +78,17 @@ body{
     border-radius: 10px;
     text-align: center center;
 }
-
-.btn:hover{
-    background-color: #005791;
-}
+    .btn:hover{
+        background-color: #005791;
+    }
+    .btn a{
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
 
 #Main{
-    margin-top: 15px;
-    /*background-color: rgb(85, 84, 84);*/
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    
 }
 
 #Title{
@@ -113,7 +114,8 @@ body{
 .Text{
     color: black;
     padding: 20px;
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 footer{
