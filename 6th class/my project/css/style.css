@@ -12,6 +12,10 @@ header{
         padding: 10px;
         font-size: 60px;
     }
+        header .Title a{
+            text-decoration: none;
+            color: white;
+        }
     header nav{
         display: flex;
         justify-content: space-evenly;
@@ -32,7 +36,6 @@ main{
     display: flex;
     flex-wrap: wrap;
 }
-
     .main_img{
         height: 500px;
         width: 100%;
@@ -99,3 +102,23 @@ main{
                 .Text-section-right .Text p{
                     font-size: 20px;
                 }
+
+                footer{
+                    background-color: black;
+                    color: white;
+                    font-size: 16px;
+                    text-align: center;
+                }
+                    nav.menu-footer{
+                        display: flex;
+                        justify-content: center;
+                    }
+                        nav.menu-footer a{
+                            padding: 10px;
+                            text-decoration: none;
+                        }
+                        footer p{
+                            color: white;
+                            font-size: 16px;
+                            padding: 10px;
+                        }
