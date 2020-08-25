@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+    .Header_Left_Container{
+        width: 50%;
+        height: 40px;
+    }
+        .Header_Left_Container img{
+            margin-top: 4px;
+            margin-left: 20px;
+            width: 105px;
+            height: auto;
+        }
+    .Header_Right_Container{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-flow: row-reverse;
+    }
+        .Header_Right_Container img{
+            width: 30px;
+            height: 30px;
+        }
+        .Header_Right_p_Sub{
+            color: black;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        .Header_Right_Img_Profile{
+            margin-right: 20px;
+        }
+        .Header_Right_Img_Search{
+            margin-right: 20px;
+        }
+        .Header_Right_p_Menu{
+            margin-right: 20px;
+            font-size: 20px;
+            color: black;
+        }
+main{
+    background-color: black;
+    padding-left: 370px;
+    padding-right: 370px;
+}
+    .Top_Header{
+        width: 100%;
+        padding-top: 135px;
+        padding-bottom: 135px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+        .Top_Title{
+            font-size: 75px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .Top_Text{
+            font-size: 25px;
+        }
+    .Middle_News_Container{
+        display: flex;
+    }
+        .Middle_Left_Container{
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+        }
+        .Middle_Left_Title{
+            font-family: 'GeoBrandBold', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+        .Middle_Left_News_Container{
+            display: flex;
+            margin-bottom: 40px;
+        }
+            .Middle_Left_News_Container img{
+                margin-right: 25px;
+                width: 130px;
+                height: 115px;
+            }
+                .Middle_Left_News_Img{
+
+                }
+            .Middle_Left_News_Texts_Container{
+
+            }
+                .Middle_Left_News_Title{
+                    -webkit-font-smoothing: antialiased;
+                    font-weight: 400;
+                    font-size: 15px;
+                    letter-spacing: 3px;
+                    line-height: 1.5;
+                    color: #fff;
+                    margin-bottom: 15px;
+                }
+
+                .Middle_Left_News_Text{
+                    font-size: 20px;
+                    font-family: 'GeoEditMedium', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+                }
+
+    .Middle_Right_Container{
+        width: 65%;
+    }
+        .Middle_Right_Main_Container{
+
+        }
+            .Middle_Right_Main_Container img{
+                width: 100%;
+                height: 500px;
+            }
+            .Middle_Right_Main_Img{
+
+            }
+            .Midlle_Right_Main{
+                background-color: red;
+                margin-top: -150px;
+                margin-left: 25px;
+                margin-bottom: 75px;
+            }
+                .Midlle_Right_Main_Title{
+                    font-size: 38px;
+                }
+                    .Middle_Right_Main_Read{
+                        padding-top: 20px;
+                        height: 20px;
+                        display: flex;
+                        flex-direction: row;
+                    }
+                        .Middle_Right_Main_Read img{
+                            margin-right: 10px;
+                            width: 13px;
+                            height: 13px;
+                        }
+                        .Middle_Rigth_Main_Text_Read{
+                            margin-left: 15px;
+                            font-size: 18px;
+                        }
+        .Middle_Right_Bottom{
+            display: flex;
+            flex-direction: row;
+        }
+            .Middle_Right_Bottom_Container{
+                background-color: white;
+                width: 48%;
+                height: 500px;
+                display: flex;
+                justify-items: center;
+                flex-direction: column;
+            }
+            .Right{
+                margin-left: 36px;
+            }
+                .Middle_Right_Bottom_Container img{
+                    width: 100%;
+                    height: 60%;
+                }
+                .Middle_Right_Bottom_Img{
+
+                }
+                .Middle_Right_Bottom_Text_Container{
+                    padding: 25px;
+                    height: 40%;
+                }
+                    .Middle_Right_Bottom_Title{
+                        color: grey;
+                    }
+                    .Middle_Rigth_Bottom_Text{
+                        color: black;
+                        font-size: 28px;
+                    }
+                    .Middle_Right_Bottom_Read{
+                        padding-top: 20px;
+                        height: 20px;
+                        display: flex;
+                        flex-direction: row;
+                    }
+                        .Middle_Right_Bottom_Read img{
+                            margin-right: 10px;
+                            width: 13px;
+                            height: 13px;
+                        }
+                        .Middle_Rigth_Bottom_Text_Read{
+                            margin-left: 15px;
+                            color: black;
+                            font-size: 18px;
+                        }
+footer{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+    nav.menu-footer{
+        display: flex;
+        justify-content: center;
+    }
+        nav.menu-footer a{
+            padding: 10px;
+            text-decoration: none;
+        }
+        footer p{
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+        }
