@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+    .Header_Left_Container{
+        width: 50%;
+        height: 40px;
+    }
+        .Header_Left_Container img{
+            margin-top: 4px;
+            margin-left: 20px;
+            width: 105px;
+            height: auto;
+        }
+    .Header_Right_Container{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-flow: row-reverse;
+    }
+        .Header_Right_Container img{
+            width: 30px;
+            height: 30px;
+        }
+        .Header_Right_p_Sub{
+            color: black;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        .Header_Right_Img_Profile{
+            margin-right: 20px;
+        }
+        .Header_Right_Img_Search{
+            margin-right: 20px;
+        }
+        .Header_Right_p_Menu{
+            margin-right: 20px;
+            font-size: 20px;
+            color: black;
+        }
+main{
+    background-color: black;
+    padding-left: 370px;
+    padding-right: 370px;
+}
+    .Top_Header{
+        width: 100%;
+        padding-top: 135px;
+        padding-bottom: 135px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+        .Top_Title{
+            letter-spacing: .2rem;
+            font-family: 'GeoBrandBold', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+            font-size: 4.3rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .Top_Text{
+            font-family: 'GeoEditRegular', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+            font-size: 1.4rem;
+        }
+        .Top_Header_Line{
+            margin-top: 30px;
+            height: 2px;
+            width: 100px;
+            background-color: #FFCC00;
+        }
+    .Middle_News_Container{
+        display: flex;
+    }
+        .Middle_Left_Container{
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+        }
+        .Middle_Left_Title_Container
+        {
+            display: flex;
+            flex-direction: row;
+            height: 31px;
+            margin-bottom: 30px;
+        }
+            .Middle_Left_Line{
+                width: 1%;
+                height: 100%;
+                background-color: #FFCC00;
+            }
+            .Middle_Left_Title{
+                letter-spacing: .2rem;
+                font-family: 'GeoBrandBold', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+                margin-left: 30px;
+                margin-bottom: 30px;
+                font-size: 1.8rem;
+            }
+        .Middle_Left_News_Container{
+            margin-right: 10px;
+            display: flex;
+            margin-bottom: 40px;
+        }
+            .Middle_Left_News_Container img{
+                margin-right: 25px;
+                width: 130px;
+                height: 115px;
+            }
+                .Middle_Left_News_Img{
+
+                }
+            .Middle_Left_News_Texts_Container{
+
+            }
+                .Middle_Left_News_Title{
+                    letter-spacing: .2rem;
+                    -webkit-font-smoothing: antialiased;
+                    font-weight: 400;
+                    font-size: 1.1rem;
+                    letter-spacing: 3px;
+                    line-height: 1.5;
+                    color: #fff;
+                    margin-bottom: 15px;
+                    font-family: 'GeoBrandBold', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+                }
+
+                .Middle_Left_News_Text{
+                    letter-spacing: .2rem;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    font-family: 'GeoEditMedium', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+                }
+
+    .Middle_Right_Container{
+        width: 65%;
+    }
+        .Middle_Right_Main_Container{
+
+        }
+            .Middle_Right_Main_Container img{
+                width: 100%;
+                height: 500px;
+            }
+            .Middle_Right_Main_Img{
+
+            }
+            .Midlle_Right_Main{
+                background-color: red;
+                margin-top: -150px;
+                margin-left: 25px;
+                margin-bottom: 75px;
+            }
+                .Midlle_Right_Main_Title{
+                    font-size: 38px;
+                }
+                    .Middle_Right_Main_Read{
+                        padding-top: 20px;
+                        height: 20px;
+                        display: flex;
+                        flex-direction: row;
+                    }
+                        .Middle_Right_Main_Read img{
+                            margin-right: 10px;
+                            width: 13px;
+                            height: 13px;
+                        }
+                        .Middle_Rigth_Main_Text_Read{
+                            margin-left: 15px;
+                            font-size: 18px;
+                        }
+        .Middle_Right_Bottom{
+            display: flex;
+            flex-direction: row;
+        }
+            .Middle_Right_Bottom_Container{
+                background-color: white;
+                width: 48%;
+                height: 500px;
+                display: flex;
+                justify-items: center;
+                flex-direction: column;
+            }
+            .Right{
+                margin-left: 36px;
+            }
+                .Middle_Right_Bottom_Container img{
+                    width: 100%;
+                    height: 60%;
+                }
+                .Middle_Right_Bottom_Img{
+
+                }
+                .Middle_Right_Bottom_Text_Container{
+                    padding: 25px;
+                    height: 40%;
+                }
+                    .Middle_Right_Bottom_Title{
+                        color: grey;
+                    }
+                    .Middle_Rigth_Bottom_Text{
+                        color: black;
+                        font-size: 28px;
+                    }
+                    .Middle_Right_Bottom_Read{
+                        padding-top: 20px;
+                        height: 20px;
+                        display: flex;
+                        flex-direction: row;
+                    }
+                        .Middle_Right_Bottom_Read img{
+                            margin-right: 10px;
+                            width: 13px;
+                            height: 13px;
+                        }
+                        .Middle_Rigth_Bottom_Text_Read{
+                            margin-left: 15px;
+                            color: black;
+                            font-size: 18px;
+                        }
+    .Specials_Main_Container{
+        height: 500px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+    }
+        .Specials_Header_Container{
+            background-color: black;
+        }
+            .Specials_Header_Container h2{
+                margin-left: 6rem;
+                padding-top: 1rem;
+                padding-left: 3rem;
+                padding-bottom: 1rem;
+                color: white;
+                font-size: 4.7rem;
+                border-left: 1px solid #FFCC00;
+                font-family: GeoEditRegular,sans-serif;
+            }
+        .Specials_Imgs_Container{
+            padding-top: 2rem;
+            padding-bottom: 5rem;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+            .Specials_Imgs_Container img{
+                display: flex;
+                flex-direction: column;
+            }
+            .Spacials_Img_Container{
+
+            }
+                .Spacials_Img_Container img{
+                    width: 41.8rem;
+                }
+            .Specials_Imgs_Container h3{
+                padding-left: 2rem;
+                padding-top: 1.8rem;
+                color: white;
+                font-size: 1.7rem;
+                font-family: GeoEditBold,sans-serif;
+                font-weight: 700;
+            }
+footer {
+    background-color: #f2f2f2;
+}
+
+div.footer-main {
+    padding-top: 6rem;
+}
+
+footer h5 {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    border-left: 1px solid black;
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+}
+
+@media(min-width: 768px) {
+    .footer-elements {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    form {
+        display: flex;
+    }
+}
+
+input {
+    display: block;
+    width: 85%;
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4b4b4b;
+    letter-spacing: .2rem;
+}
+
+
+@media(min-width: 768px) {
+    input {
+        width: 25rem;
+        padding: 0;
+        height: 5rem;
+    }
+}
+
+
+footer button {
+    display: block;
+    width: 90%;
+    border: none;
+    background-color: #4b4b4b;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+@media(min-width:768px) {
+    footer button {
+        width: 15rem;
+        height: 5rem;
+    }
+}
+
+footer button:hover {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+footer .icons i{
+    display: inline-block;
+    font-size: 2.1rem;
+    margin-right: 2rem;
+}
+
+footer .icons i:hover {
+    color: var(--primary);
+}
+
+.fa-facebook-f {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+} 
+
+.fa-flipboard {
+    color: #e12828;
+}
+
+.footer-text {
+    margin-top: 10rem;
+}
+
+.footer-text p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: #868686;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.footer-text p:last-child {
+    padding-bottom: 5rem;
+}
+
+@media(min-width: 768px) {
+    .footer-text {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+
+    .footer-text p {
+        margin-right: 8rem;
+        margin-top: 0;
+        margin-bottom: 8rem;
+    }
+}
