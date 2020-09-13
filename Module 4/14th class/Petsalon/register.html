@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri&display=swap" rel="stylesheet">
+
+    <title>Register</title>
+</head>
+<body>
+    <header class="Header">
+        <h1 class="Header_Title">Register</h1>
+    </header>
+    
+    <nav class="Nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="register.html">Register</a>
+    </nav>
+    
+    <main class="Main">
+        <h2 class="Main_Title">Register</h2>
+        <form action="#">
+            <p class="form-group">
+                <label for="">Pet's name</label>
+                <input class="form-control" type="text" name="name" id="Name">
+            </p>
+
+            <p class="form-group">
+                <label for="">Pet's age</label>
+                <input class="form-control" type="text" name="age" id="Age">
+            </p>
+
+            <p class="form-group">
+                <label for="">Pet's type</label>
+                <input class="form-control" type="text" name="type" id="Type">
+            </p>
+
+            <p class="form-group">
+                <label for="">Pet's breed</label>
+                <input class="form-control" type="text" name="breed" id="Breed">
+            </p>
+
+            <p class="form-group">
+                <label for="">Pet's gender</label>
+                <input class="form-control" type="text" name="gender" id="Gender">
+            </p>
+
+            <p class="form-group">
+                <label for="">Service required</label>
+                <select class="form-control" name="services" id="Services">
+                    <option value="">Select a service</option>
+                    <option value="">Shower</option>
+                    <option value="">Hair cut</option>
+                    <option value="">Nails cut</option>
+                    <option value="">Full service</option>
+                </select>
+            </p>
+
+            <p class="form-group">
+                <label for="">Owner's name</label>
+                <input class="form-control" type="text" name="OwnerName" id="Owner">
+            </p>
+
+            <p class="form-group">
+                <label for="">Contac phone</label>
+                <input class="form-control" type="text" name="phone" id="Phone">
+            </p>
+            <input type="button" class="btn btn-succces" value="Register" onclick="Register();">
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
