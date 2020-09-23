@@ -17,6 +17,13 @@ var Scooby = new Pet(1, 50, "Scooby", "Dog", "Dane", "Male", "Full Service", "Sh
 var Dimitri = new Pet(2, 50, "Dimitri", "Bear", "Ursidae", "Male", "Full Service", "Vladimir Putin", "46454545");
 var Aleksander = new Pet(3, 50, "Aleksander", "Dog", "Siberian Husky", "Male", "Full Service", "Alexey", "47454545");
 
+let Pets = [];
+Pets.push(Scooby);
+Pets.push(Dimitri);
+Pets.push(Aleksander);
+
+let PetsType = [["Dog", 2], ["Bear", 1]];
+
 var txtName = document.getElementById('Name'),
     txtAge = document.getElementById('Age'),
     txtType = document.getElementById('Type'),
@@ -30,10 +37,41 @@ function Register(){
     var thePet = new Pet(ID, txtName.value, txtAge.value,txtType.value, txtBreed.value, txtGender.value, txtService.value, txtOwner.value, txtPhone.value);
         ID += 1;
 
+        let Found = false;
+        for (let i = 0; i < PetsType.length; i++) {
+            const element = PetsType[i][0];
+            console.log(element + " - " + thePet.type);
+            if (element === thePet.type) {
+                PetsType[i][1] += 1;
+                console.log("Encontrado - " + PetsType[i][1]);
+                Found = true;
+                break;
+            }
+            console.log("Vuelta: " + i)
+        }
+        if(Found === false){
+            PetsType.push([thePet.type, 1]);
+            console.log("Añadido = " + thePet.type);
+        }
+
+        console.log("Fin ciclo");
+
     Clear();
     display(thePet);
-}
 
+    console.log("Antes de eliminar");
+    let index = 1;
+    NumberOfPetRows.forEach(element => {
+        console.log("Vuelta " + index);
+        console.log(NumberOfPetRows.length);
+        Delete("Row_" + index);
+        index += 1;
+    });
+    console.log("Despues de eliminar");
+
+    displayNumberOfPets();
+}
+ 
 function display(pet){
     let Tabla = document.getElementById("pets");
     let row = 
@@ -51,6 +89,24 @@ function display(pet){
         </tr>`;
 
     Tabla.innerHTML += row;
+}
+
+let NumberOfPetRows = [];
+function displayNumberOfPets(){
+    NumberOfPetRows = [];
+    let index = 1;
+    PetsType.forEach(item => {
+        let Tabla = document.getElementById("petsTable");
+        let row = 
+       `<tr id="Row_${index}">
+            <td>${item[0]}</td>
+            <td>${item[1]}</td>
+        </tr>`;
+
+        Tabla.innerHTML += row;
+        NumberOfPetRows.push(row);
+        index += 1;
+    });
 }
 
 function Delete(id){
@@ -73,6 +129,7 @@ function Clear(){
 display(Scooby);
 display(Dimitri);
 display(Aleksander);
+displayNumberOfPets();
 
 // Desplegar el numero de animales registrados y el tipo
 // Buscar mascota
