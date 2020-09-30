@@ -1,0 +1,7 @@
+.container-fluid{
+    display: flex;
+}
+
+.section{
+    flex: 1;
+}
