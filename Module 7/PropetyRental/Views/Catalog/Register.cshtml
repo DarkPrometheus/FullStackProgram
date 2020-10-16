@@ -1,0 +1,70 @@
+<h2>Register Property</h2>
+
+<form>
+    <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Title</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="txtTitle">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Beds</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="txtBeds">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Baths</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="txtBaths">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Price</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="txtPrice">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Area</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="txtArea">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="txtDescription">
+        </div>
+    </div>
+
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Parking Included</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input radio_0" type="radio" name="gridRadios" id="gridRadiosYes" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadiosNo" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="button" id="btnSave" class="btn btn-primary">Send</button>
+    </div>
+  </div>
+</form>
+
+@section Scripts {
+    <script src="/js/register.js"></script>
+}

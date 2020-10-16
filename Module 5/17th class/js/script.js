@@ -131,5 +131,21 @@ display(Dimitri);
 display(Aleksander);
 displayNumberOfPets();
 
-// Desplegar el numero de animales registrados y el tipo
-// Buscar mascota
+function events(){
+    $('#phone').keypress(function(e){
+        console.log(e);
+    });
+
+    $('body').keyup(function(e) {
+		if(e.which == 13){
+		//ejecuto algo
+    if(cont<funciones.length){
+     funciones[cont]();
+        cont++;
+    }
+        
+  }
+});
+}
+
+window.onload = events;

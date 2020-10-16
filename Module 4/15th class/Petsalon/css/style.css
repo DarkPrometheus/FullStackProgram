@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.Header{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    padding: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-image: url("../img/Hed6.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    .Header h1{
+        padding: 1.5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        font-family: 'Russo One', sans-serif;
+        color: white;
+        background-color: #0033A0;
+        border-radius: 3rem;
+    }
+body{
+    background-color: #0033A0;
+}
+.Nav{
+    background-color: #DA291C;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+    .Nav a{
+        text-decoration: none;
+        font-family: 'Gayathri', sans-serif;
+        background-color: #DA291C;        
+        font-size: 1.3rem;
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Nav a:hover{
+        background-color: #ac1f15;
+        border-radius: 1rem;
+    }
+.Main{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 2rem;
+}
+    .Main h2{
+        font-family: 'Russo One', sans-serif;
+        font-size: 4rem;
+        padding-bottom: 1rem;
+    }
+    .Main p{
+        padding-top: 1rem;
+        font-size: 1.3rem;
+        font-family: 'Gayathri', sans-serif;
+    }
+.Footer{
+    background-color: #DA291C;
+    position: absolute;
+    bottom: 0;
+    width: 97.5%;
+    font-family: 'Russo One', sans-serif;
+    padding: 1.6rem;
+}
+
+#petSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
