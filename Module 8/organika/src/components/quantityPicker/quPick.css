@@ -1,0 +1,20 @@
+.containerQP{
+    display: flex;
+    flex-direction: column;
+}
+    .btn{
+        margin: .5rem;
+        padding: .5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.5rem;
+        background-color: rgb(35, 32, 39);
+        color: Gainsboro;
+    }
+    .btn:hover{
+        background-color: rgb(15, 14, 17);
+    }
+    .quantity{
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
