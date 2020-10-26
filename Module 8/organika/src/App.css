@@ -6,19 +6,38 @@ html{
 .App {
   text-align: center;
   width: 100%;
-  height: 100%;
+  height: 43.3rem;
 }
 
-.main{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-around;
+.contenedor{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  
 }
-  .columna{
-    width: 33%;
-    display: flex;
-    justify-content: center;
+  .contenedor img{
+    display: grid;
+    width: 50vw;
+    height: 50vh;
+    margin-left: 25vw;
   }
+.slides {
+  position: relative;
+  background-color: black;
+  justify-content: center;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index:1;
+}
+
+.slides .slick-prev {
+  left: 5%;
+}
+
+.slides .slick-next {
+  right: 5%;
+}

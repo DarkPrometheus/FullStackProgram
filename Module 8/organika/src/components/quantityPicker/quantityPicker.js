@@ -4,7 +4,7 @@ import "./quPick.css"
 class QuantityPicker extends Component {
     state = {
         quantity: 1,
-        minumum: 1,
+        minumum: this.props.minumum,
     };
 
     render() { 
@@ -23,7 +23,8 @@ class QuantityPicker extends Component {
         let current = this.state.quantity
         current += 1;
 
-        this.setState({quantity : current})
+        this.setState({ quantity: current })
+        this.props.onValueChange(current);
     }
 
     decrease = () => {
@@ -31,6 +32,7 @@ class QuantityPicker extends Component {
 
         if (current > 1) {
             current -= 1;
+            this.props.onValueChange(current);
         }
 
         this.setState({quantity : current})

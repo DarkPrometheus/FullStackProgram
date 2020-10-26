@@ -8,9 +8,14 @@
     "@testing-library/user-event": "^7.1.2",
     "boostrap": "^2.0.0",
     "bootstrap": "^4.5.3",
+    "pure-react-carousel": "^1.27.5",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3"
+    "react-elastic-carousel": "^0.9.1",
+    "react-responsive-carousel": "^3.2.10",
+    "react-scripts": "3.4.3",
+    "react-slick": "^0.27.12",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",

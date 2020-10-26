@@ -2,21 +2,19 @@ import React from 'react';
 import './App.css';
 import NavBar from './components/navBar/navBar';
 import Footer from './components/footer/footer'
-import Product from './components/product/product';
+import Catalog from './components/catalog/catalog';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Carousel from './components/carousel/caroulsel'
 
-function App() {
+function App(){
   return (
     <div className="App">
-
-      <NavBar></NavBar>
-
-      <div className="main">
-        <div className="columna"><Product></Product></div>
-        <div className="columna"><Product></Product></div>
-        <div className="columna"><Product></Product></div>
-      </div>
+      <NavBar />
       
-      <Footer></Footer>
+      <Carousel></Carousel>
+
+      <Footer/>
     </div>
   );
 }

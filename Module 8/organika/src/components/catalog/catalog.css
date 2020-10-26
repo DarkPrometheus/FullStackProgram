@@ -1,0 +1,14 @@
+.main{
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+    .columna{
+      margin: 1rem;
+      
+      width: 14rem;
+      display: flex;
+      justify-content: center;
+    }
