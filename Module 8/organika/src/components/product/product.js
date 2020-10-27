@@ -15,8 +15,8 @@ class Product extends Component {
                 <h1>{this.props.data.title}</h1>
                 <img className="img" src={"/products/" + this.props.data.image} ></img>
                 <div className="labesl">
-                    <label>Total: {this.state.Total}</label>
-                    <label>Price: {this.props.data.price}</label>
+                    <label>Total: ${this.state.Total}</label>
+                    <label>Price: ${this.props.data.price}</label>
                 </div>
 
                 <QuantityPicker
