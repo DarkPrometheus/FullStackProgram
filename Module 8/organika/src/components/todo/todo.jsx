@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./todo.css"
 
 class Todo extends Component {
   state = {
@@ -8,9 +9,9 @@ class Todo extends Component {
   render() {
     return (
       <div>
-        <h5>Simple todo app</h5>
+        <h5>Todo section</h5>
 
-        <div>
+        <div className="input_field">
           <input
             type="text"
             value={this.state.todoText}
@@ -20,7 +21,7 @@ class Todo extends Component {
           <button onClick={this.addTodo}>Add</button>
         </div>
 
-        <div>
+        <div className="list">
           <ul>
             {this.state.todos.map((td, i) => (
               <li key={i}>{td}</li>
