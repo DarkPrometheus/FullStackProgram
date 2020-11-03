@@ -1,0 +1,32 @@
+h5{
+    font-size: 2rem;
+}
+.input_field{
+    display: flex;
+    justify-content: flex-start;
+}
+    .input_field input, .input_field button{
+        font-size: 1.2rem;
+        background-color: rgb(11, 7, 17);
+        color: Gainsboro;
+        margin-bottom: 1rem;
+    }
+    .input_field button{
+        margin-left: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color: rgb(35, 32, 39);
+        color: Gainsboro;
+    }
+    .input_field button:hover{
+        background-color: rgb(15, 14, 17);
+    }
+
+.list{
+    margin-left: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    color: gainsboro;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}

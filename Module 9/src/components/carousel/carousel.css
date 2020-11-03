@@ -1,0 +1,32 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: 50vh;
+  }
+    .contenedor img{
+      display: grid;
+      width: 50vw;
+      height: 50vh;
+      margin-left: 25vw;
+    }
+  .slides {
+    position: relative;
+    background-color: black;
+    width: 98vw;
+  }
+  
+  .slides .slick-prev,
+  .slides .slick-next {
+    position: absolute;
+    top: 50%;
+    z-index:1;
+  }
+  
+  .slides .slick-prev {
+    left: 5%;
+  }
+  
+  .slides .slick-next {
+    right: 5%;
+  }
