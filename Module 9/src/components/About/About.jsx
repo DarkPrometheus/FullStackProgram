@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "./About.css"
 
 class About extends Component {
     state = { 
@@ -14,7 +15,7 @@ class About extends Component {
 
                 { this.getEmailText() }
 
-                <button onClick ={this.onButtonClicked}>{this.state.emailVisible ? "Hide email" : "Show email"}</button>
+                <button className="btn" onClick ={this.onButtonClicked}>{this.state.emailVisible ? "Hide email" : "Show email"}</button>
             </div>
          );
     }

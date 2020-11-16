@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import "./navBar.css"
+import { connect } from 'react-redux';
 
 class NavBar extends Component{
     render() { 
@@ -15,11 +16,11 @@ class NavBar extends Component{
                 <div className="nav-container"></div>
                 <div className=" nav-container nav-container-2">
                     <Link className="btn btn-outline-info my-2 my-sm-0" to="/cart">
-                    <i className="fa fa-shopping-cart cart-icon" aria-hidden="true"></i>
-                    View cart
-                    <span classNAme="badge badge-primary cart-badge">
-                    2
-                    </span>
+                        <i className="fa fa-shopping-cart cart-icon" aria-hidden="true"></i>
+                        View cart
+                        <span className="badge badge-primary cart-badge">
+                        {this.props.count}
+                        </span>
                     </Link>
                 </div>
             </div>
@@ -27,4 +28,10 @@ class NavBar extends Component{
     }
 }
 
-export default NavBar;
+const mapStateToProps = (state) => {
+    return {
+      //count: state.cart.length,
+  }  
+};
+
+export default connect(mapStateToProps, null)(NavBar);

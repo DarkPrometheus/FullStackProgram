@@ -1,8 +1,22 @@
 .about{
     display: flex;
     justify-content: center;
-    background-color: aliceblue;
+    flex-direction: column;
+    margin-bottom: 29.95rem;
 }
 .about h1{
-
+    color: Gainsboro;
+}
+.about p{
+    color: Gainsboro;
+}
+.about a{
+    color: Gainsboro;
+}
+.about label{
+    color: Gainsboro;
+}
+.about button{
+    margin-left: 43%;
+    width: 15%;
 }

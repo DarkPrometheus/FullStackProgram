@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import QuantityPicker from '../quantityPicker/quantityPicker';
 import "./product.css"
+import { connect } from 'react-redux';
+import { addProductToCart } from '../../store/actions/actions';
 
 class Product extends Component {
     state = {
@@ -23,9 +25,20 @@ class Product extends Component {
                     minumun={1}
                     onValueChange={(Quantity) => this.handleQuantytiChange(Quantity)}
                 ></QuantityPicker>
-
+                <button onClick={this.addClicked} className="btn">Add</button>
             </div>
         );
+    }
+
+    addClicked = () => {
+        console.log("Clicked");
+
+        const addedProduct = {
+            product: this.props.data,
+            quantity: this.state.quantity
+        };
+
+        this.props.addProductToCart(addedProduct);
     }
 
     handleQuantytiChange = (Quantity) => {
@@ -35,4 +48,4 @@ class Product extends Component {
     }
 }
 
-export default Product;
+export default connect(null, { addProductToCart })(Product);
